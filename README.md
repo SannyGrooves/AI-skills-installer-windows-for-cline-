@@ -1,8 +1,4 @@
-Here’s a robust, automated PowerShell installer (skillsinstaller.ps1) that installs the requested skill packs system-wide for Cline on Windows.
-Target locations (Cline global)
-	•	Primary: $env:USERPROFILE\.cline\skills\
-	•	Compatibility: $env:USERPROFILE\.agents\skills\ (many agents + skills CLI use this)
-The script clones the repos (shallow), discovers every folder containing a SKILL.md, and copies them into both global locations.
+
 # skillsinstaller.ps1
 # Installs popular Agent Skills packs system-wide for Cline (Windows)
 # Targets: %USERPROFILE%\.cline\skills  and  %USERPROFILE%\.agents\skills
