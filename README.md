@@ -37,3 +37,30 @@ Skills are installed into both global locations used by Cline so they are availa
 ## Target Locations
 
 Skills are installed system-wide into:
+%USERPROFILE%.cline\skills
+%USERPROFILE%.agents\skills\
+
+
+These are the global paths Cline reads from on Windows.
+
+---
+
+## Requirements
+
+- Windows 10 / 11
+- PowerShell 5.1 or PowerShell 7+
+- [Git for Windows](https://git-scm.com/download/win) available in `PATH`
+
+---
+
+## Quick Start
+
+```powershell
+# Recommended first run (skips the huge catalog)
+.\skillsinstaller.ps1 -SkipLarge
+
+# Full install (includes everything)
+.\skillsinstaller.ps1
+
+# Force re-download + overwrite existing skills
+.\skillsinstaller.ps1 -Force -SkipLarge
